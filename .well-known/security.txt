@@ -1,0 +1,5 @@
+Contact: mailto:info@sboxathletic.com
+Expires: 2027-12-31T23:59:59Z
+Preferred-Languages: tr, en
+Canonical: https://www.sboxathletic.com/.well-known/security.txt
+Policy: https://www.sboxathletic.com
