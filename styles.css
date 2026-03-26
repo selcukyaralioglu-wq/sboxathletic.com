@@ -476,14 +476,6 @@ body {
 .instagram-fallback { display: none; text-align: center; padding: 20px; color: var(--muted); }
 .instagram-widget:empty + .instagram-fallback { display: block; }
 
-.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
-.gallery-grid .g { display: block; padding: 8px; transition: transform .2s ease; text-decoration: none; }
-.gallery-grid .g-img { width: 100%; aspect-ratio: 1 / 1; background: #1b1b1b center/cover no-repeat; border-radius: 10px; }
-.gallery-grid .g:hover { transform: translateY(-2px); }
-@media (max-width: 760px) {
-  .gallery-grid { grid-template-columns: 1fr; }
-}
-
 /* Form */
 .form { max-width: 720px; margin: 0 auto; }
 .form-row { display: grid; gap: 6px; margin-bottom: 12px; }
