@@ -123,6 +123,48 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
   pointer-events: none;
 }
 
+.trainer .avatar.avatar--placeholder {
+  background: linear-gradient(165deg, #141a22 0%, #0f1318 60%, #0c1015 100%);
+  border: 1px dashed rgba(255, 212, 0, 0.35);
+  display: grid;
+  place-items: center;
+}
+
+.trainer .avatar.avatar--placeholder .avatar-icon {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border: 2px solid rgba(255, 212, 0, 0.55);
+  border-radius: 50%;
+  background: rgba(255, 212, 0, 0.06);
+}
+
+.trainer .avatar.avatar--placeholder .avatar-icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffe466;
+  transform: translateX(-50%);
+}
+
+.trainer .avatar.avatar--placeholder .avatar-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  width: 34px;
+  height: 20px;
+  border: 2px solid #ffe466;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: 0;
+  transform: translateX(-50%);
+}
+
 .price-board { margin: 18px 0 24px; }
 .price-title { margin: 0 0 10px; font-size: clamp(18px, 3.2vw, 24px); color: var(--text); }
 .price-table { padding: 12px; }
