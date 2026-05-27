@@ -1,10 +1,17 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navList = document.getElementById('primary-nav');
-if (navToggle && navList) {
+const mobilePanel = document.getElementById('discovery-mobile-panel');
+
+function closeMobileMenu() {
+  if (mobilePanel) mobilePanel.classList.remove('is-open');
+  if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+}
+
+if (navToggle && mobilePanel) {
   navToggle.addEventListener('click', () => {
     const expanded = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', String(!expanded));
-    navList.classList.toggle('show');
+    mobilePanel.classList.toggle('is-open');
   });
 }
 
@@ -17,10 +24,7 @@ document.addEventListener('click', (e) => {
   if (target) {
     e.preventDefault();
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    if (navList && navList.classList.contains('show')) {
-      navList.classList.remove('show');
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
+    closeMobileMenu();
   }
 });
 
@@ -162,7 +166,14 @@ document.addEventListener('click', (e) => {
       heroP1: 'Modern ekipman, uzman antrenörler ve titiz hijyen standartları. SBOX ile hedeflerine ulaş.',
       heroP2: 'Sınırlı kontenjan, birebir ilgi ve sakin atmosferle butik bir spor salonu deneyimi.',
       heroMaps: "Google Maps'te Bize Ulaş",
+      heroKicker: 'Butik Athletic Club · Premium Deneyim',
+      heroTrust: ['Onaylı antrenör kadrosu', 'Hijyen ve premium ekipman', 'Sınırlı kapasite, kişisel ilgi'],
+      heroPanelTitle: 'Premium hizmet alanları',
+      heroPanelText: 'Gym, dövüş sporları, PT, pilates, fizyoterapi ve beslenme tek çatı altında.',
       heroStats: ['Ders', 'Memnuniyet', 'Spor Deneyimi'],
+      discovery: ['Gym', 'Kickboxing', 'PT', 'Pilates', 'Fizyoterapi', 'Diyetisyen'],
+      statsSection: ['Premium kulüp deneyimi', 'Butik atmosfer, uzman kadro ve çok disiplinli hizmet yapısı.', 'Hizmet alanı', 'Ders & program', 'Uzman ekip', 'Açık yüzme havuzu'],
+      premiumBand: ['Hedefine uygun programı birlikte planlayalım.', 'Ücretsiz danışmanlık görüşmesi ile sana en uygun gym, PT veya recovery planını netleştirelim.', 'Formu doldur'],
       servicesHead: ['Hizmetler', 'Hedeflerine göre uzmanlaşmış dokuz hizmet alanı.'],
       serviceBadges: ['Dövüş Sporları', 'Fonksiyonel Alan', 'Kişiye Özel', 'Stüdyo Dersleri', 'Sağlık & Recovery', 'Performans', 'Beslenme', 'Ek İmkan', 'Sosyal Alan'],
       serviceTitles: ['Kickboks, Boks & Muaythai', 'GYM', 'Personal Trainer', 'Pilates & Reformer Pilates', 'Fizyoterapi & Sporcu Recovery', 'Atletik Performans', 'Diyetisyen', 'Açık Yüzme Havuzu', 'Cafe & Rest'],
@@ -227,7 +238,14 @@ document.addEventListener('click', (e) => {
       heroP1: 'Modern equipment, expert coaches, and strict hygiene standards. Reach your goals with SBOX.',
       heroP2: 'A boutique training experience with limited capacity, personal attention, and a calm atmosphere.',
       heroMaps: 'Find Us on Google Maps',
+      heroKicker: 'Boutique Athletic Club · Premium Experience',
+      heroTrust: ['Certified coaching team', 'Hygiene and premium equipment', 'Limited capacity, personal attention'],
+      heroPanelTitle: 'Premium service areas',
+      heroPanelText: 'Gym, combat sports, PT, pilates, physiotherapy, and nutrition under one roof.',
       heroStats: ['Classes', 'Satisfaction', 'Training Experience'],
+      discovery: ['Gym', 'Kickboxing', 'PT', 'Pilates', 'Physiotherapy', 'Dietitian'],
+      statsSection: ['Premium club experience', 'Boutique atmosphere, expert team, and multi-discipline services.', 'Service areas', 'Classes & programs', 'Expert team', 'Outdoor swimming pool'],
+      premiumBand: ['Let us plan the right program for your goals.', 'Book a free consultation to define the best gym, PT, or recovery plan for you.', 'Fill the form'],
       servicesHead: ['Services', 'Nine specialized service areas tailored to your goals.'],
       serviceBadges: ['Combat Sports', 'Functional Area', 'Personalized', 'Studio Classes', 'Health & Recovery', 'Performance', 'Nutrition', 'Extra Facility', 'Social Area'],
       serviceTitles: ['Kickboxing, Boxing & Muay Thai', 'Gym', 'Personal Training', 'Pilates & Reformer Pilates', 'Physiotherapy & Athlete Recovery', 'Athletic Performance', 'Dietitian', 'Outdoor Swimming Pool', 'Cafe & Rest'],
@@ -305,20 +323,62 @@ document.addEventListener('click', (e) => {
     }
 
     const heroTitle = document.querySelector('.hero-copy h1');
-    const heroPs = document.querySelectorAll('.hero-copy p');
+    const heroPs = document.querySelectorAll('.hero-copy > p');
     const mapsBtn = document.querySelector('.hero-cta .btn--primary');
     const heroStats = document.querySelectorAll('.hero-stats li span');
+    const heroKicker = document.querySelector('.hero-kicker');
+    const trustBadges = document.querySelectorAll('.trust-badge');
+    const heroPanelTitle = document.querySelector('.hero-panel__title');
+    const heroPanelText = document.querySelector('.hero-panel__text');
+    const discoveryLinks = document.querySelectorAll('[data-discovery]');
+    const statsHead = document.querySelector('.stats-grid')?.closest('.section')?.querySelector('.section-head--left');
+    const statCards = document.querySelectorAll('.stat-card span');
+    const premiumBand = document.querySelector('.premium-band__copy');
+    const premiumBandBtn = document.querySelector('.premium-band__actions .btn--primary');
+
     if (heroTitle) heroTitle.innerHTML = t.heroTitle;
     if (heroPs.length >= 2) {
       heroPs[0].textContent = t.heroP1;
       heroPs[1].textContent = t.heroP2;
     }
+    if (heroKicker) heroKicker.textContent = t.heroKicker;
+    trustBadges.forEach((badge, i) => {
+      if (t.heroTrust[i]) badge.textContent = t.heroTrust[i];
+    });
+    if (heroPanelTitle) heroPanelTitle.textContent = t.heroPanelTitle;
+    if (heroPanelText) heroPanelText.textContent = t.heroPanelText;
     if (mapsBtn) mapsBtn.textContent = t.heroMaps;
     if (heroStats.length >= 3) {
       heroStats[0].textContent = t.heroStats[0];
       heroStats[1].textContent = t.heroStats[1];
       heroStats[2].textContent = t.heroStats[2];
     }
+    discoveryLinks.forEach((link, i) => {
+      const label = t.discovery[i];
+      if (!label) return;
+      const textNode = link.querySelector('span') || link;
+      if (textNode === link) link.textContent = label;
+      else textNode.textContent = label;
+    });
+    if (statsHead) {
+      const h2 = statsHead.querySelector('h2');
+      const p = statsHead.querySelector('p');
+      if (h2) h2.textContent = t.statsSection[0];
+      if (p) p.textContent = t.statsSection[1];
+    }
+    if (statCards.length >= 4) {
+      statCards[0].textContent = t.statsSection[2];
+      statCards[1].textContent = t.statsSection[3];
+      statCards[2].textContent = t.statsSection[4];
+      statCards[3].textContent = t.statsSection[5];
+    }
+    if (premiumBand) {
+      const h2 = premiumBand.querySelector('h2');
+      const p = premiumBand.querySelector('p');
+      if (h2) h2.textContent = t.premiumBand[0];
+      if (p) p.textContent = t.premiumBand[1];
+    }
+    if (premiumBandBtn) premiumBandBtn.textContent = t.premiumBand[2];
 
     const servicesHead = document.querySelector('#hizmetler .section-head');
     const serviceCards = document.querySelectorAll('#hizmetler .service');

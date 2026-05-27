@@ -13,11 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sbox-premium-theme.css">
   <meta name="theme-color" content="#0a0a0a">
   <meta property="og:title" content="SBOX Athletic - Discover Your Power">
   <meta property="og:description" content="Modern equipment, expert coaches, strict hygiene standards, and premium boutique training.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sbox-athletic.example/">
+  <meta property="og:url" content="https://www.sboxathletic.com/">
   <meta property="og:image" content="https://www.sboxathletic.com/assets/hero-main-real.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SBOX Athletic - Discover Your Power">
@@ -29,7 +30,7 @@
     "@context": "https://schema.org",
     "@type": "HealthClub",
     "name": "SBOX Athletic & Fitness Club",
-    "url": "https://sbox-athletic.example/",
+    "url": "https://www.sboxathletic.com/",
     "image": "https://www.sboxathletic.com/assets/hero-main-real.png",
     "telephone": "+90 539 100 30 03",
     "address": {
@@ -55,51 +56,164 @@
       <a href="#top" class="logo" aria-label="SBOX Home">
         <img class="brand-logo" src="assets/logo1.svg" alt="SBOX Athletic & Fitness Club" decoding="async">
       </a>
-      <nav class="nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+
+      <nav class="discovery-nav" aria-label="Keşif menüsü">
+        <div class="discovery-pill">
+          <a href="#hizmetler" data-discovery="gym">Gym</a>
+          <a href="#hizmetler" data-discovery="kickboxing">Kickboxing</a>
+          <a href="#hizmetler" data-discovery="pt">PT</a>
+          <a href="#hizmetler" data-discovery="pilates">Pilates</a>
+          <a href="#hizmetler" data-discovery="physio">Fizyoterapi</a>
+          <a href="#hizmetler" data-discovery="diet">Diyetisyen</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="discovery-mobile-panel" aria-label="Toggle menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
-        <ul id="primary-nav" class="nav-list">
-          <li><a href="#hizmetler">Services</a></li>
-          <li><a href="#antrenorler">Team</a></li>
-          <li><a href="#galeri">Gallery</a></li>
-          <li><a href="#iletisim" class="btn btn--sm">Contact</a></li>
-          <li><button id="lang-toggle" class="btn btn--sm lang-toggle" type="button" aria-label="Switch language">EN</button></li>
-        </ul>
-      </nav>
+        <a href="#antrenorler" class="btn btn--outline-gold btn--sm header-link-desktop">Ekibimiz</a>
+        <a href="#iletisim" class="btn btn--premium btn--sm">İletişim</a>
+        <button id="lang-toggle" class="btn btn--sm lang-toggle" type="button" aria-label="Switch language">EN</button>
+      </div>
     </div>
+
+    <div id="discovery-mobile-panel" class="discovery-mobile">
+      <div class="container">
+        <p class="discovery-mobile__label">Keşif menüsü</p>
+        <div class="discovery-mobile__grid">
+          <a class="discovery-mobile__item" href="#hizmetler" data-discovery="gym"><span>Gym</span>→</a>
+          <a class="discovery-mobile__item" href="#hizmetler" data-discovery="kickboxing"><span>Kickboxing</span>→</a>
+          <a class="discovery-mobile__item" href="#hizmetler" data-discovery="pt"><span>Personal Training</span>→</a>
+          <a class="discovery-mobile__item" href="#hizmetler" data-discovery="pilates"><span>Pilates</span>→</a>
+          <a class="discovery-mobile__item" href="#hizmetler" data-discovery="physio"><span>Fizyoterapi</span>→</a>
+          <a class="discovery-mobile__item" href="#hizmetler" data-discovery="diet"><span>Diyetisyen</span>→</a>
+          <a class="discovery-mobile__item" href="#antrenorler"><span>Ekibimiz</span>→</a>
+          <a class="discovery-mobile__item" href="#galeri"><span>Galeri</span>→</a>
+          <a class="discovery-mobile__item" href="#iletisim"><span>İletişim</span>→</a>
+        </div>
+      </div>
+    </div>
+
+    <ul id="primary-nav" class="nav-list sr-only" aria-hidden="true">
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#antrenorler">Ekibimiz</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
   </header>
 
   <main>
     <section class="hero" aria-label="Hero section">
       <div class="container hero-inner">
         <div class="hero-copy">
+          <div class="hero-kicker">
+            Boutique Athletic Club · Premium Experience
+          </div>
+
           <h1>Discover Your Power, <br><span>Push Your Limits</span></h1>
           <p>Modern equipment, expert coaches, and strict hygiene standards. Reach your goals with SBOX.</p>
           <p>A boutique training experience with limited capacity, personal attention, and a calm atmosphere.</p>
+
+          <ul class="trust-badges">
+            <li class="trust-badge">Onaylı antrenör kadrosu</li>
+            <li class="trust-badge">Hijyen ve premium ekipman</li>
+            <li class="trust-badge">Sınırlı kapasite, kişisel ilgi</li>
+          </ul>
+
           <div class="hero-cta">
             <a href="https://maps.app.goo.gl/vETgT7aPX26wBfzL9" target="_blank" rel="noopener" class="btn btn--primary" data-track="cta_hero_maps">Find Us on Google Maps</a>
             <a href="https://www.instagram.com/sboxathletic/" target="_blank" rel="noopener" class="btn btn--ghost" data-track="cta_hero_instagram">Instagram</a>
           </div>
-          <ul class="hero-stats" aria-label="Key statistics">
-            <li><strong>+40</strong><span>Classes</span></li>
-            <li><strong>%100</strong><span>Satisfaction</span></li>
-            <li><strong>Boutique</strong><span>Training Experience</span></li>
-          </ul>
+
+          <div class="hero-panel">
+            <strong class="hero-panel__title">Premium hizmet alanları</strong>
+            <p class="hero-panel__text">Gym, dövüş sporları, PT, pilates, fizyoterapi ve beslenme tek çatı altında.</p>
+            <ul class="hero-stats hero-panel__stats" aria-label="Key statistics">
+              <li class="hero-panel__stat"><strong>+40</strong><span>Classes</span></li>
+              <li class="hero-panel__stat"><strong>%100</strong><span>Satisfaction</span></li>
+              <li class="hero-panel__stat"><strong>Boutique</strong><span>Training Experience</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="hero-media" aria-hidden="true">
-          <div class="card photo photo--main"></div>
-          <div class="card photo photo--accent"></div>
+
+        <div class="hero-showcase">
+          <div class="hero-showcase__head">
+            <div>
+              <p class="hero-showcase__eyebrow">Premium vitrin</p>
+              <h2 class="hero-showcase__title">Öne çıkan alanlar</h2>
+            </div>
+            <div class="hero-showcase__icon" aria-hidden="true">★</div>
+          </div>
+          <div class="hero-showcase__list">
+            <a class="hero-showcase__item" href="#hizmetler">
+              <div class="hero-showcase__rank">01</div>
+              <div class="hero-showcase__meta">
+                <strong>Kickboxing & Muay Thai</strong>
+                <span>Performans odaklı dövüş sporları</span>
+              </div>
+              <span class="hero-showcase__tag">Premium</span>
+            </a>
+            <a class="hero-showcase__item" href="#hizmetler">
+              <div class="hero-showcase__rank">02</div>
+              <div class="hero-showcase__meta">
+                <strong>Gym & Athletic Performance</strong>
+                <span>Premium ekipman ve kuvvet alanı</span>
+              </div>
+              <span class="hero-showcase__tag">Premium</span>
+            </a>
+            <a class="hero-showcase__item" href="#hizmetler">
+              <div class="hero-showcase__rank">03</div>
+              <div class="hero-showcase__meta">
+                <strong>Fizyoterapi & Recovery</strong>
+                <span>Sakatlık önleme ve toparlanma</span>
+              </div>
+              <span class="hero-showcase__tag">Premium</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="hero-gradient" aria-hidden="true"></div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span class="section-kicker">SBOX Athletic</span>
+          <h2>Premium kulüp deneyimi</h2>
+          <p>Butik atmosfer, uzman kadro ve çok disiplinli hizmet yapısı.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-card__icon">★</div>
+            <strong>9</strong>
+            <span>Hizmet alanı</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__icon">◎</div>
+            <strong>+40</strong>
+            <span>Ders & program</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__icon">✓</div>
+            <strong>7</strong>
+            <span>Uzman ekip</span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__icon">∞</div>
+            <strong>Pool</strong>
+            <span>Açık yüzme havuzu</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="hizmetler" class="section services">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head section-head--left">
+          <span class="section-kicker">Hizmetler</span>
           <h2>Services</h2>
           <p>Nine specialized service areas tailored to your goals.</p>
         </header>
@@ -119,7 +233,8 @@
 
     <section id="antrenorler" class="section trainers">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head section-head--left">
+          <span class="section-kicker">Ekibimiz</span>
           <h2>Ekibimiz</h2>
           <p>Alanında uzman, sertifikalı ve motive edici ekip.</p>
         </header>
@@ -137,7 +252,8 @@
 
     <section id="yorumlar" class="section testimonials">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head section-head--left">
+          <span class="section-kicker">Üye deneyimi</span>
           <h2>Üye Yorumları</h2>
           <p>Topluluğumuzdan gerçek başarı hikayeleri.</p>
         </header>
@@ -151,7 +267,8 @@
 
     <section id="galeri" class="section gallery" aria-label="Galeri">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head section-head--left">
+          <span class="section-kicker">Galeri</span>
           <h2>Galeri</h2>
           <p>Instagram'dan son paylaşımlarımız. Daha fazlası için <a href="https://www.instagram.com/sboxathletic/" target="_blank" rel="noopener">@sboxathletic</a>.</p>
         </header>
@@ -168,7 +285,7 @@
 
     <section class="section faq" aria-label="Sık Sorulan Sorular">
       <div class="container">
-        <header class="section-head"><h2>SSS</h2><p>Merak edilen konular.</p></header>
+        <header class="section-head section-head--left"><span class="section-kicker">SSS</span><h2>SSS</h2><p>Merak edilen konular.</p></header>
         <div class="card">
           <details><summary>Üyeliğimi dondurabilir miyim?</summary><p>Plan türüne göre dönemsel dondurma hakkı tanımlanır.</p></details>
           <details><summary>İlk kez geliyorum, hangi plan uygun?</summary><p>GYM 1 Ay veya Kickboks 4 Ders ile başlayın; danışman görüşmesi ücretsiz.</p></details>
@@ -177,9 +294,27 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="premium-band">
+          <div class="premium-band__inner">
+            <div class="premium-band__copy">
+              <span class="section-kicker">SBOX Athletic</span>
+              <h2>Hedefine uygun programı birlikte planlayalım.</h2>
+              <p>Ücretsiz danışmanlık görüşmesi ile sana en uygun gym, PT veya recovery planını netleştirelim.</p>
+            </div>
+            <div class="premium-band__actions">
+              <a href="#iletisim" class="btn btn--primary">Formu doldur</a>
+              <a href="tel:+905391003003" class="btn btn--outline-gold">+90 539 100 30 03</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="iletisim" class="section contact">
       <div class="container">
-        <header class="section-head"><h2>İletişim ve Üyelik</h2><p>Formu doldurun ya da aşağıdaki kanallardan bize ulaşın.</p></header>
+        <header class="section-head section-head--left"><span class="section-kicker">İletişim</span><h2>İletişim ve Üyelik</h2><p>Formu doldurun ya da aşağıdaki kanallardan bize ulaşın.</p></header>
         <div class="grid grid-3">
           <form id="contact-form" class="card form" novalidate>
             <div class="form-row"><label for="name">Ad Soyad</label><input type="text" id="name" name="name" required placeholder="Adınız Soyadınız"><span class="error" id="err-name" aria-live="polite"></span></div>
@@ -202,11 +337,44 @@
   </main>
 
   <footer class="site-footer">
+    <div class="container footer-premium">
+      <div class="footer-brand">
+        <a href="#top" class="logo" aria-label="SBOX Home">
+          <img class="brand-logo" src="assets/logo1.svg" alt="SBOX Athletic" decoding="async">
+        </a>
+        <p>Modern ekipman, uzman antrenörler, hijyen standartları ve butik kulüp atmosferi.</p>
+        <div class="footer-tags">
+          <span class="footer-tag">Boutique Club</span>
+          <span class="footer-tag">Premium Equipment</span>
+          <span class="footer-tag">Recovery & Nutrition</span>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div>
+          <h3>Hizmetler</h3>
+          <a href="#hizmetler">Gym</a>
+          <a href="#hizmetler">Kickboxing</a>
+          <a href="#hizmetler">Personal Training</a>
+          <a href="#hizmetler">Pilates</a>
+        </div>
+        <div>
+          <h3>Wellness</h3>
+          <a href="#hizmetler">Fizyoterapi</a>
+          <a href="#hizmetler">Diyetisyen</a>
+          <a href="#hizmetler">Athletic Performance</a>
+          <a href="#hizmetler">Swimming Pool</a>
+        </div>
+        <div>
+          <h3>İletişim</h3>
+          <a href="tel:+905391003003">+90 539 100 30 03</a>
+          <a href="https://maps.app.goo.gl/vETgT7aPX26wBfzL9" target="_blank" rel="noopener">Google Maps</a>
+          <a href="https://www.instagram.com/sboxathletic/" target="_blank" rel="noopener">Instagram</a>
+          <a href="#iletisim">Contact Form</a>
+        </div>
+      </div>
+    </div>
     <div class="container footer-inner">
-      <a href="#top" class="logo">
-        <img class="brand-logo" src="assets/logo1.svg" alt="SBOX Athletic & Fitness Club" decoding="async">
-      </a>
-      <p>© 2018 SBOX Athletic & Fitness Club</p>
+      <p>© <span id="year">2018</span> SBOX Athletic & Fitness Club</p>
       <ul class="footer-links">
         <li><a href="#hizmetler">Hizmetler</a></li>
         <li><a href="#iletisim">Üyelik</a></li>
@@ -227,4 +395,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
