@@ -189,16 +189,15 @@ document.addEventListener('click', (e) => {
         'Antrenman öncesi/sonrası dinlenebileceğiniz, sağlıklı seçenekler sunan konforlu cafe alanı.'
       ],
       teamHead: ['Ekibimiz', 'Alanında uzman, sertifikalı ve motive edici ekip.'],
-      trainerBadges: ['Kurucu - Direktör', 'Fizyoterapi', 'Performans', 'Kişiye Özel', 'Beslenme', 'Operasyon', 'Operasyon', 'Stüdyo Dersleri'],
+      trainerBadges: ['Kurucu - Direktör', 'PERSONAL TRAINER', 'Kişiye Özel', 'Beslenme', 'Fizyoterapi', 'Operasyon', 'Operasyon'],
       trainerTitles: [
         'Baş Antrenör • Kuvvet & Kondisyon • Atletik Performans • Kickboks & Boks & Muaythai',
-        'Müdür • Uzman Fizyoterapist',
-        'Tenis Antrenörü • Performans Antrenörü',
+        'Tenis Antrenörü - Performans Antrenörü',
         'Personal Trainer',
         'Uzman Diyetisyen',
+        'Uzman Fizyoterapist • Reformer Pilates Eğitmeni',
         'Sorumlu',
-        'Görevli Sorumlu',
-        'Reformer Pilates Eğitmeni'
+        'Görevli Sorumlu'
       ],
       reviewHead: ['Üye Yorumları', 'Topluluğumuzdan gerçek başarı hikayeleri.'],
       reviewBadges: ['Gerçek Deneyim', 'Kulüp Atmosferi', 'Butik Deneyim'],
@@ -261,16 +260,15 @@ document.addEventListener('click', (e) => {
         'A comfortable cafe lounge with healthy options for pre- and post-workout rest.'
       ],
       teamHead: ['Our Team', 'Certified professionals focused on expertise, motivation, and results.'],
-      trainerBadges: ['Founder - Director', 'Physiotherapy', 'Performance', 'Personalized', 'Nutrition', 'Operations', 'Operations', 'Studio Classes'],
+      trainerBadges: ['Founder - Director', 'Personal Trainer', 'Personalized', 'Nutrition', 'Physiotherapy', 'Operations', 'Operations'],
       trainerTitles: [
         'Head Coach • Strength & Conditioning • Athletic Performance • Kickboxing, Boxing & Muay Thai',
-        'Manager • Senior Physiotherapist',
-        'Tennis Coach • Performance Coach',
+        'Tennis Coach - Performance Coach',
         'Personal Trainer',
         'Senior Dietitian',
+        'Physiotherapist • Reformer Pilates Instructor',
         'Supervisor',
-        'Operations Responsible',
-        'Reformer Pilates Instructor'
+        'Operations Responsible'
       ],
       reviewHead: ['Member Reviews', 'Real success stories from our community.'],
       reviewBadges: ['Real Experience', 'Club Atmosphere', 'Boutique Experience'],
