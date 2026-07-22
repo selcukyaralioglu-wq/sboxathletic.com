@@ -104,13 +104,16 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
 .card { background: linear-gradient(180deg, #12161c, #0f1318); border: 1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow: var(--shadow); }
 
 .trainer .avatar {
-  height: 230px;
+  aspect-ratio: 4 / 5;
+  width: 100%;
   border-radius: 16px;
   background-image: var(--trainer-photo, url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop'));
   background-size: cover;
-  background-position: center 30%;
+  background-position: var(--trainer-pos, center 22%);
+  background-repeat: no-repeat;
+  background-color: #0f1318;
   border: 1px solid rgba(255, 212, 0, 0.22);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   position: relative;
   overflow: hidden;
 }
@@ -119,7 +122,7 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.45) 100%);
   pointer-events: none;
 }
 
@@ -412,13 +415,16 @@ body {
   color: #c8ced9;
 }
 .trainer .avatar {
-  height: 230px;
+  aspect-ratio: 4 / 5;
+  width: 100%;
   border-radius: 16px;
   background-image: var(--trainer-photo, url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop'));
   background-size: cover;
-  background-position: center 30%;
+  background-position: var(--trainer-pos, center 22%);
+  background-repeat: no-repeat;
+  background-color: #0f1318;
   border: 1px solid rgba(255, 212, 0, 0.22);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   position: relative;
   overflow: hidden;
 }
@@ -427,7 +433,7 @@ body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.45) 100%);
   pointer-events: none;
 }
 
