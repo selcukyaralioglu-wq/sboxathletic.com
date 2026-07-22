@@ -195,7 +195,7 @@ document.addEventListener('click', (e) => {
         'Tenis Antrenörü - Performans Antrenörü',
         'Personal Trainer',
         'Uzman Diyetisyen',
-        'Uzman Fizyoterapist • Reformer Pilates Eğitmeni',
+        'Fizyoterapist • Reformer Pilates Eğitmeni',
         'Sorumlu',
         'Görevli Sorumlu'
       ],
