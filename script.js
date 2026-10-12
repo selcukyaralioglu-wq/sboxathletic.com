@@ -189,14 +189,11 @@ document.addEventListener('click', (e) => {
         'Antrenman öncesi/sonrası dinlenebileceğiniz, sağlıklı seçenekler sunan konforlu cafe alanı.'
       ],
       teamHead: ['Ekibimiz', 'Alanında uzman, sertifikalı ve motive edici ekip.'],
-      trainerBadges: ['Kurucu - Direktör', 'PERSONAL TRAINER', 'Kişiye Özel', 'Beslenme', 'Fizyoterapi', 'Operasyon', 'Operasyon', 'Operasyon'],
+      trainerBadges: ['Kurucu - Direktör', 'PERSONAL TRAINER', 'Fizyoterapi', 'Operasyon', 'Operasyon'],
       trainerTitles: [
         'Baş Antrenör • Kuvvet & Kondisyon • Atletik Performans • Kickboks & Boks & Muaythai',
         'Tenis Antrenörü - Performans Antrenörü',
-        'Personal Trainer',
-        'Uzman Diyetisyen',
         'Fizyoterapist • Reformer Pilates Eğitmeni',
-        'Sorumlu',
         'Sorumlu',
         'Görevli Sorumlu'
       ],
@@ -261,14 +258,11 @@ document.addEventListener('click', (e) => {
         'A comfortable cafe lounge with healthy options for pre- and post-workout rest.'
       ],
       teamHead: ['Our Team', 'Certified professionals focused on expertise, motivation, and results.'],
-      trainerBadges: ['Founder - Director', 'Personal Trainer', 'Personalized', 'Nutrition', 'Physiotherapy', 'Operations', 'Operations', 'Operations'],
+      trainerBadges: ['Founder - Director', 'Personal Trainer', 'Physiotherapy', 'Operations', 'Operations'],
       trainerTitles: [
         'Head Coach • Strength & Conditioning • Athletic Performance • Kickboxing, Boxing & Muay Thai',
         'Tennis Coach - Performance Coach',
-        'Personal Trainer',
-        'Senior Dietitian',
         'Physiotherapist • Reformer Pilates Instructor',
-        'Supervisor',
         'Supervisor',
         'Operations Responsible'
       ],
