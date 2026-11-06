@@ -192,7 +192,7 @@ document.addEventListener('click', (e) => {
       trainerBadges: ['Kurucu - Direktör', 'Dövüş Sporları', 'Fizyoterapi', 'Operasyon', 'Operasyon'],
       trainerTitles: [
         'Baş Antrenör • Kuvvet & Kondisyon • Atletik Performans • Kickboks & Boks & Muaythai',
-        'Yardımcı Antrenör • Kickboks & Muaythai',
+        'Genel Sorumlu • Antrenör • Kickboks & Muaythai',
         'Fizyoterapist • Reformer Pilates Eğitmeni',
         'Sorumlu',
         'Görevli Sorumlu'
@@ -261,7 +261,7 @@ document.addEventListener('click', (e) => {
       trainerBadges: ['Founder - Director', 'Combat Sports', 'Physiotherapy', 'Operations', 'Operations'],
       trainerTitles: [
         'Head Coach • Strength & Conditioning • Athletic Performance • Kickboxing, Boxing & Muay Thai',
-        'Assistant Coach • Kickboxing & Muay Thai',
+        'General Supervisor • Coach • Kickboxing & Muay Thai',
         'Physiotherapist • Reformer Pilates Instructor',
         'Supervisor',
         'Operations Responsible'
