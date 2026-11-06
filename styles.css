@@ -119,7 +119,7 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 82% 16%;
+  object-position: center;
   display: block;
 }
 .trainer .avatar::after {
@@ -435,7 +435,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 82% 16%;
+  object-position: center;
   display: block;
 }
 .trainer .avatar::after {
